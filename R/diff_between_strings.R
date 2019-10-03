@@ -4,7 +4,7 @@
 #' @export
 
 
-diff_strings <-
+diff_between_strings <-
         function(string, subtraction_string) {
                 delete_phrase_from_string(string = string, phrase = subtraction_string)
         }
