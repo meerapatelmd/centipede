@@ -1,4 +1,5 @@
-
+#' Loop over replacements in a string
+#' @export
 str_replace_loop <-
         function(x, pattern_vector, replacement_vector) {
                 for (i in 1:length(pattern_vector)) {

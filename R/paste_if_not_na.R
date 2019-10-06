@@ -1,6 +1,6 @@
 #' Paste everything but na into a single string
 #' @param ... character vector to convert to string
-#'
+#' @export
 paste_if_not_na <-
         function(..., sep = "", collapse = " ") {
                 ARGS <- list(...)
