@@ -1,3 +1,6 @@
+#' Split string
+#' @export
+
 strsplit <- function(x,
                      split,
                      type = "remove",
