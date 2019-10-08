@@ -6,7 +6,7 @@ carry_forward_and_add_one <-
                 for (i in 2:length(vector)) {
                         if (is.na(vector[i])) {
                                 x <- vector[i-1]
-                                vector[i] <- (as.integer(x) + 1)
+                                vector[i] <- as.numeric(x) + 1
                         }
                 }
                 return(vector)
