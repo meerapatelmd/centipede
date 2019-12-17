@@ -6,7 +6,6 @@
 trimws <-
         function(x,
                  which = c("both", "left", "right"),
-                 whitespace = "[ \t\r\n]",
                  inner_space = TRUE) {
                 if (inner_space == FALSE) {
                         output <-
@@ -16,8 +15,7 @@ trimws <-
                 } else {
                         output <-
                                 base::trimws(x = x,
-                                       which = which,
-                                       whitespace = whitespace)
+                                       which = which)
 
                         output <-
                                 stringr::str_replace_all(output, "[ ]{2,}", " ")

@@ -4,8 +4,7 @@
 \alias{trimws}
 \title{Base trimws with an "inner" option that removes all spaces greater than 1 inside strings}
 \usage{
-trimws(x, which = c("both", "left", "right"),
-  whitespace = "[ \\t\\r\\n]", inner_space = TRUE)
+trimws(x, which = c("both", "left", "right"), inner_space = TRUE)
 }
 \description{
 Base trimws with an "inner" option that removes all spaces greater than 1 inside strings
