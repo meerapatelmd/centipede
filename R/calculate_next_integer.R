@@ -6,19 +6,10 @@
 
 calculate_next_integer <-
         function(vector, sampled = FALSE) {
-                max <- max(as.integer(vector))
                 if (sampled == FALSE) {
-                        if (max <= 10000) {
-                                return(as.character(1 + max(as.integer(vector))))
-                        } else {
                                 return(as.character(1 + max(gmp::as.bigz(vector), na.rm = TRUE)))
-                        }
                 } else {
-                        if (max <= 10000) {
-                                return(as.character((sample(1:9, 1)) + max(as.integer(vector))))
-                        } else {
                                 return(as.character((sample(1:9, 1)) + max(gmp::as.bigz(vector), na.rm = TRUE)))
-                        }
                 }
 
         }
