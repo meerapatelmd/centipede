@@ -1,7 +1,8 @@
-#' Get words following a phrase based on number or
+#' Get words following a phrase based on number or a seocnd phrase
+#'@export
 
 
-cherrypick_words_2 <- function(x, phrase, n_words = 3L, upto = NULL) {
+pluck_words <- function(x, phrase, n_words = 3L, upto = NULL) {
         if (length(x) > 0) {
                 x <- paste0(x, collapse = ' ')
         }
