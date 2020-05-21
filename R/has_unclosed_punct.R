@@ -1,11 +1,9 @@
-#' Aggregates the logic functions for all unclosed elements
+#' Aggregates the logic functions for all unclosed punctuation
 #' @description Aggregate of parentheses, brackets, and curly bracket logical functions.
 #' @importFrom tibble tibble
-#' @importFrom rubix filter_first_row
-#' @importFrom rubix slice_first_row
 #' @export
 
-has_unclosed_elements <-
+has_unclosed_punct <-
         function(strings) {
 
                 p_output <- has_unclosed_parentheses(strings = strings)
