@@ -4,7 +4,10 @@
 \alias{no_na}
 \title{Remove NA from a string}
 \usage{
-no_na(vector)
+no_na(vector, incl_str = TRUE)
+}
+\arguments{
+\item{incl_str}{Include "NA" in the removal?}
 }
 \description{
 Remove NA from a string
