@@ -4,7 +4,10 @@
 \alias{no_blank}
 \title{Remove blank from a string}
 \usage{
-no_blank(vector)
+no_blank(vector, all_lengths = FALSE)
+}
+\arguments{
+\item{all_lengths}{if TRUE, strings of one space (ie "^ $") and longer (ie "^          $") are also removed.}
 }
 \description{
 Remove blank from a string
