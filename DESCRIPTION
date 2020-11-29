@@ -2,11 +2,12 @@ Package: centipede
 Type: Package
 Title: Manipulate Strings and Vectors
 Version: 0.1.0
-Authors@R:
+Authors@R: 
     person(given = "Meera",
            family = "Patel, MD",
            role = c("aut", "cre"),
-           email = "patelmeeray@gmail.com")
+           email = "patelmeeray@gmail.com",
+           comment = c(ORCID = "0000-0002-3401-3948"))
 Description: Manipulate strings and vectors in various ways.
 License: MIT + file LICENSE
 Encoding: UTF-8
